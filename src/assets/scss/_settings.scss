@@ -893,3 +893,118 @@ $grid-container-padding: $grid-padding-gutters;
 $grid-container-max: $global-width;
 $xy-block-grid-max: 8;
 
+
+$topbar-center-logo-bg: transparent;
+
+.topbar-center-logo {
+  background: $topbar-center-logo-bg;
+
+  .menu {
+    background: $topbar-center-logo-bg;
+
+    a {
+      color: $dark-gray;
+    }
+  }
+}
+
+.topbar-center-logo .top-bar-center {
+  flex: 1 0 auto;
+
+  @include breakpoint(small only) {
+    display: none;
+  }
+}
+
+.topbar-center-logo-mobile {
+  background: $topbar-center-logo-bg;
+
+  .menu-icon {
+    vertical-align: text-top;
+  }
+}
+
+
+
+
+.wedding {
+
+  body {
+
+  }
+
+  h1,h2,h3 {
+    font-family: moret, serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  p,ul,li,a {
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+  }
+
+  ul,li,a {
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+
+  p {
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  section {
+    margin: 4em 0;
+  }
+
+  .light-red {
+    background: #FFE9E9;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 2;
+
+      img {
+        -webkit-animation:spin 20s linear infinite;
+        -moz-animation:spin 20s linear infinite;
+        animation:spin 20s linear infinite;
+      }
+
+    }
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+    .hero-img {
+      margin-top: -180px;
+      z-index: 1;
+      position: relative;
+    }
+
+
+    .card {
+      position: relative;
+      width: 95%;
+      // height: 450px;
+      border: 1px solid #082b2b;
+      background: #fff;
+      display: -ms-flexbox!important;
+      display: flex!important;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      margin: 2em 0;
+      transition: .5s;
+    }
+
+
+
+}
