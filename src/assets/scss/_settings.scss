@@ -849,7 +849,8 @@ $titlebar-background: $black;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
-$titlebar-icon-color: $white;
+// $titlebar-icon-color: $white;
+$titlebar-icon-color: #2e2929;
 $titlebar-icon-color-hover: $medium-gray;
 $titlebar-icon-spacing: 0.25rem;
 
@@ -933,6 +934,7 @@ $topbar-center-logo-bg: transparent;
 
   }
 
+
   h1,h2,h4,h3 {
     font-family: moret, serif;
     font-weight: 700;
@@ -980,6 +982,10 @@ $topbar-center-logo-bg: transparent;
     background: #FFFECF;
   }
 
+  .light-green {
+    background: #E7FFED;
+  }
+
   .logo {
     position: relative;
     z-index: 2;
@@ -998,7 +1004,13 @@ $topbar-center-logo-bg: transparent;
     .hero-img {
       z-index: 1;
       position: relative;
-      bottom: 160px;
+      bottom: 120px;
+
+      @include breakpoint(medium down) {
+        bottom: 2px;
+        margin-bottom: 1em;
+      }
+
     }
 
     .section_img_left {
@@ -1012,6 +1024,14 @@ $topbar-center-logo-bg: transparent;
       z-index: 2;
       margin-top: 1em;
     }
+
+    .section_img_left, .section_img_right {
+      @include breakpoint(medium down) {
+        max-width: 75%;
+      }
+    }
+
+
 
 
     .card {
@@ -1038,6 +1058,21 @@ $topbar-center-logo-bg: transparent;
       box-shadow: 10px 10px #FFF315;
     }
 
+    .green-shadow {
+      box-shadow: 10px 10px #053802;
+    }
+
+    .callout {
+      position: relative;
+      width: 95%;
+      border: 1px solid #FFF315;
+      border-radius: 50%;
+      background: #FFF315;
+      text-align: center;
+      padding: 40px;
+      margin: 2em 0;
+      transition: .5s;
+    }
 
 
 }
