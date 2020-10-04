@@ -982,6 +982,11 @@ $topbar-center-logo-bg: transparent;
     background: #FFFECF;
   }
 
+  .dark-green {
+    color: #fff;
+    background-color: #053802 !important;
+  }
+
   .light-green {
     background: #E7FFED;
   }
@@ -1030,9 +1035,6 @@ $topbar-center-logo-bg: transparent;
         max-width: 75%;
       }
     }
-
-
-
 
     .card {
       position: relative;
