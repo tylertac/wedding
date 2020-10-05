@@ -904,13 +904,17 @@ $topbar-center-logo-bg: transparent;
     background: $topbar-center-logo-bg;
 
     a {
-      color: $dark-gray;
+      color: #2d2929;
     }
   }
 }
 
 .top-bar, .top-bar ul {
     background-color: transparent !important;
+}
+
+.title-bar {
+  background: transparent !important;
 }
 
 .topbar-center-logo .top-bar-center {
@@ -971,7 +975,13 @@ $topbar-center-logo-bg: transparent;
   }
 
   a {
-    color: #292929;
+    color: #2d2929;
+  }
+
+
+  a:hover {
+    color: #989898;
+    transition: 1s;
   }
 
   section {
@@ -1057,16 +1067,45 @@ $topbar-center-logo-bg: transparent;
 
     }
 
+    .card-link:hover {
+      transition: .5s;
+      transform:translate(2px, 2px);
+    }
+
     .red-shadow {
       box-shadow: 10px 10px #D43B2A;
+    }
+
+    .red-shadow-link {
+      box-shadow: 10px 10px #D43B2A;
+    }
+
+    .red-shadow-link:hover {
+      box-shadow: 2px 2px #D43B2A;
     }
 
     .yellow-shadow {
       box-shadow: 10px 10px #FFF315;
     }
 
+    .yellow-shadow-link {
+      box-shadow: 10px 10px #FFF315;
+    }
+
+    .yellow-shadow-link:hover {
+      box-shadow: 2px 2px #FFF315;
+    }
+
     .green-shadow {
       box-shadow: 10px 10px #053802;
+    }
+
+    .green-shadow-link {
+      box-shadow: 10px 10px #053802;
+    }
+
+    .green-shadow-link:hover {
+      box-shadow: 2px 2px #053802;
     }
 
     .callout {
