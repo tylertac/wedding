@@ -909,6 +909,10 @@ $topbar-center-logo-bg: transparent;
   }
 }
 
+.top-bar, .top-bar ul {
+    background-color: transparent !important;
+}
+
 .topbar-center-logo .top-bar-center {
   flex: 1 0 auto;
 
@@ -1031,6 +1035,7 @@ $topbar-center-logo-bg: transparent;
     }
 
     .section_img_left, .section_img_right {
+      border: 10px solid black;
       @include breakpoint(medium down) {
         max-width: 75%;
       }
