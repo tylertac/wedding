@@ -1023,7 +1023,7 @@ $topbar-center-logo-bg: transparent;
     .hero-img {
       z-index: 1;
       position: relative;
-      bottom: 120px;
+      bottom: 40px;
 
       @include breakpoint(medium down) {
         bottom: 2px;
